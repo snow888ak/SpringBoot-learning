@@ -1,0 +1,16 @@
+#person:
+##  name: 张三
+##  age: 18
+##  birth: 1986/10/07
+##  boss: false
+##  maps:
+##    k1: v1
+##    k2: 20
+##    k3: true
+##  list:
+##    - kotlin
+##    - java
+##    - python
+##  dog:
+##    name: 小花
+##    age: 2
