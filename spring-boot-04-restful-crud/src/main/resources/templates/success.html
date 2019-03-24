@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>首页</h1>
+<!--/*@thymesVar id="hello" type=""*/-->
+<span th:text="${hello}">你好</span>
+
+<hr/>
+
+<!--/*@thymesVar id="books" type="java.util.List"*/-->
+<h3 th:text="${book}" th:each="book: ${books}"></h3>
+
+<hr/>
+
+<h3>
+    <span th:text="${book}" th:each="book: ${books}"></span>
+</h3>
+
+<hr/>
+
+<!--th:each会复制多行-->
+<h3 th:each="book: ${books}">
+    <span th:text="${book}"/>
+</h3>
+
+<hr />
+
+<span th:text="${user.userName}"></span>
+<span th:text="${user.age}"></span>
+
+<hr />
+<span th:object="${user}">
+    <span th:text="${userName}"></span>
+    <span th:text="${age}"></span>
+</span>
+
+</body>
+</html>
